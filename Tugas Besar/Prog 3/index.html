@@ -486,28 +486,53 @@ a:hover {
           <hr>
           <div class="row">
               <div class="col" style="padding-left:0;">ITEMS 3</div>
-              <div class="col text-right">Rp ___</div>
+              <div class="col text-right">
+                <span  id="sp4" class="d-inline">IDR</span> <div class="d-inline" id="brg4">148,650,000</div>
+                <p id='bayang' style="display: none;"></p>
+              </div>
           </div>
           <form>
               <p>SHIPPING</p> 
-              <select>
-                  <option class="text-muted">JNE -  Rp 500</option>
-                  <option class="text-muted">TIKI - Rp 500</option>
-                  <option class="text-muted">SiCepat - Rp 500</option>
-                  <option class="text-muted">J&T - Rp 500</option>
-                  <option class="text-muted">Ninja Express - Rp 500</option>
-                  <option class="text-muted">POS Indonesia - Rp 500</option>
-                  <option class="text-muted">AnterAja - Rp 500</option>
-                  <option class="text-muted">Wahana - Rp 500</option>
-                  <option class="text-muted">GoSend - Rp 500</option>
-                  <option class="text-muted">GrabExpress - Rp 500</option>
+              <select id="jasap" onchange="ongkir()">
+                  <option class="text-muted" value="11000">JNE -  Rp 11000</option>
+                  <option class="text-muted" value="8000">SiCepat - Rp 8000</option>
+                  <option class="text-muted" value="10000">J&T - Rp 10000</option>
+                  <option class="text-muted" value="32000">GoSend - Rp 32000</option>
+                  <option class="text-muted" value="35000">GrabExpress - Rp 35000</option>
               </select>
-              <p>GIVE CODE</p> <input id="code" placeholder="Enter your code">
-          </form>
+          
           <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
               <div class="col">TOTAL PRICE</div>
-              <div class="col text-right">Rp ___</div>
-          </div> <button class="btn">CHECKOUT</button>
+              <div class="col text-right" id="hasil"></div>
+          </div>
+          <button type="button" id="checkout" onclick="checkout1()" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+           CHECKOUT
+          </button>
+
+<!-- Modal -->
+
+<div class="modal fade border" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content ">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Gator Gadget Store</h5>
+     
+      </div>
+      <div class="modal-body">
+        Pesananmu akan segera diproses. </br>
+        <div>
+          <span class="d-inline">Total Harga :</span>
+          <span class="d-inline" id="th1"></span>
+        </div>
+        <br>
+        Terima kasih telah berbelanja di toko kami.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
       </div>
   </div>
 </div>

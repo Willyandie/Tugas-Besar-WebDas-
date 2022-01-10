@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+
+      html {
+        box-sizing: border-box;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+      }
+
+      .about-section {
+        padding: 50px;
+        text-align: center;
+        background-color: #474e5d;
+        color: white;
+      }
+
+      .container {
+        padding: 0 16px;
+      }
+
+      .container::after,
+      .row::after {
+        content: '';
+        clear: both;
+        display: table;
+      }
+
+      .title {
+        color: grey;
+      }
+
+      .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      .button:hover {
+        background-color: #555;
+      }
+
+      @media screen and (max-width: 650px) {
+        .column {
+          width: 100%;
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--Navbar-->
+    <span id="0"></span>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="src/logo.png" alt="" width="60" height="60" class="align-middle" />
+          <span class="align-middle ms-2 fw-light fs-4" style="letter-spacing: 2px">Gadget Store</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-2" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+			<li class="nav-item">
+				<a class="nav-link" aria-current="page" href="Contact Us PHP/contactus.php">ContactUs</a>
+			  </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="aboutus.html">AboutUs</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="Home.html">Home</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" aria-current="page" href="index.html">Logout</a>
+			  </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Akhir Navbar-->
+    <div class="about-section">
+      <h1>About Us</h1>
+    </div>
+    <div class="container mt-3">
+      <div class="row align-items-start">
+        <!-- Yehezkiel David Setiawan -->
+        <div class="d-inline-block">
+          <div class="column">
+            <div class="card">
+              <div class="container">
+                <img src="src/david.jpg" style="width: 100%" class="mt-2" />
+                <h2>Yehezkiel David S.</h2>
+                <p class="title">2172003</p>
+                <p>IG : yehezkiel_.david</p>
+                <p>2172003@maranatha.ac.id</p>
+              </div>
+            </div>
+          </div>
+          <!-- Martin Widarmadi -->
+          <div class="column">
+            <div class="card">
+              <div class="container">
+                <img src="src/martin.jpg" style="width: 100%" class="mt-2" /> <!--Ganti gambarnya-->
+                <h2>Martin Widarmadi</h2>
+                <p class="title">2072010</p>
+                <p>IG:martinwidarmadi_</p>
+                <p>2072010@maranatha.ac.id</p>
+              </div>
+            </div>
+          </div>
+          <!--Willyandie Saputra-->
+          <div class="column">
+            <div class="card">
+              <div class="container">
+                <img src="src/willy.png" style="width: 100%" class="mt-2" /> <!--Ganti gambarnya-->
+                <h2>Willyandie Saputra</h2>
+                <p class="title">2172023</p>
+                <p>IG : @willyandie.s_</p>
+                <p>2172023@maranatha.ac.id</p>
+              </div>
+            </div>
+          </div>
+          <!-- Thoriq Hidayansyah-->
+          <div class="column">
+            <div class="card">
+              <div class="container">
+                <img src="src/toriq.jpg" style="width: 100%;" height="348" class="mt-2" /> <!--Ganti gambarnya-->
+                <h2>Thoriq Hidayansyah</h2>
+                <p class="title">2172019</p>
+                <p>IG : thoriquee</p>
+                <p>2172019@maranatha.ac.id</p>
+              </div>
+            </div>
+          </div>
+          <!-- Yovie Adhisti Mulyono -->
+          <div class="column">
+            <div class="card">
+              <div class="container">
+                <img src="src/yovie.jpg" style="width: 100%" class="mt-2" /> <!--Ganti gambarnya-->
+                <h2>Yovie Adhisti Mulyono</h2>
+                <p class="title">2172005</p>
+                <p>IG : yovieadhisti</p>
+                <p>2172005@maranatha.ac.id</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- William Wijaya -->
+          <div class="column">
+            <div class="card">
+              <div class="container">
+                <img src="src/default.png" style="width: 100%" class="mt-2" /> <!--Ganti gambarnya-->
+                <h2>William Wijaya</h2>
+                <p class="title">2172011</p>
+                <p>IG : william.wijaya.54</p>
+                <p>2172011@maranatha.ac.id</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vina Anjelina -->
+          <div class="column">
+            <div class="card">
+              <div class="container">
+                <img src="src/vina.png" style="width: 100%" class="mt-2" /> <!--Ganti gambarnya-->
+                <h2>Vina Anjelina</h2>
+                <p class="title">2072022</p>
+                <p>vinaanjelina.227</p>
+                <p>2072022@maranatha.ac.id</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tabitha Emmanuella Kotambunan -->
+          <div class="column">
+            <div class="card">
+              <div class="container">
+                <img src="src/tabitha.jpg" style="width: 100%" class="mt-2" /> <!--Ganti gambarnya-->
+                <h2>Tabitha Emmanuella K.</h2>
+                <p class="title">2172021</p>
+                <p>IG : kotambunantabitha</p>
+                <p>2172021@maranatha.ac.id</p>
+              </div>
+            </div>
+          </div>
+     
+      
+          <!-- Michael Kuswanto -->
+          <div class="column">
+            <div class="card">
+              <div class="container">
+                <img src="src/michael.jpg" style="width: 100%" class="mt-2" /> <!--Ganti gambarnya-->
+                <h2>Michael Kuswanto</h2>
+                <p class="title">2172037</p>
+                <p>IG : mike_kun24</p>
+                <p>2172037@maranatha.ac.id</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Theresia Putri Nadia -->
+          <div class="column">
+            <div class="card">
+              <div class="container">
+                <img src="src/theresia.jpg" style="width: 100%" class="mt-2" /> <!--Ganti gambarnya-->
+                <h2>Theresia Putri Nadia</h2>
+                <p class="title">2172017</p>
+                <p>IG:oogieboodie</p>
+                <p>2172017@maranatha.ac.id</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Alfin Liunardi Senjaya -->
+          <div class="column">
+            <div class="card">
+              <div class="container">
+                <img src="src/default.png" style="width: 100%" class="mt-2" /> <!--Ganti gambarnya-->
+                <h2>Alfin Liunardi Senjaya</h2>
+                <p class="title">1672034</p>
+                <p>IG : @alfinliunardi</p>
+                <p>1672034@maranatha.ac.id</p>
+              </div>
+            </div>
+      </div>
+    </div>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  </body>
+</html>

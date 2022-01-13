@@ -134,7 +134,7 @@
     <div class="container" id="judul1">
       
         <div class="column d-inline">
-          <img src="src/logo.png" style="width: 100%" class="mt-2" />
+          <img src="src/logo.png" style="width: 100%" class="mt-5" />
         </div>
         <div class="column d-inline text-start">
           <form method="POST">
@@ -143,7 +143,7 @@
             <label for="lname">Email</label>
             <input type="text" id="lname" name="lname" placeholder="Insert Your Email" />
             <label for="country">Country</label>
-            <select id="country" name="country">
+            <select id="country" name="country" class="mb-3">
               <option value="australia">Australia</option>
               <option value="canada">Canada</option>
               <option value="usa">USA</option>
@@ -151,7 +151,7 @@
               <option value="overseas">Overseas</option>
             </select>
             <label for="subject">Type Something...</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height: 350px"></textarea>
+            <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
             <input type="button" class="btn btn-success" value="Submit" name="ok" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
           </form>
         </div>
@@ -180,12 +180,12 @@
   </div>
 </div>
      <!--Footer-->
-    <div class="card w-100" style="border: none;">
-  
-  <div class="card-body text-center bg-dark text-white ">
-    <h5 class="card-title"><i>"Be Yourself and Never Surrender!"</i></h5>
-    <h6 class="card-title"><i>JessNoLimit</i></h6>
-    <p class="card-text">&copy; Gator Gadget Store 2021</p>
+  <div class="card w-100" style="border: none;">
+    <div class="card-body text-center bg-dark text-white ">
+      <h5 class="card-title"><i>"Be Yourself and Never Surrender!"</i></h5>
+      <h6 class="card-title"><i>JessNoLimit</i></h6>
+      <p class="card-text">&copy; Gator Gadget Store 2021</p>
+    </div>
   </div>
 <!--Akhir Footer-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />

@@ -67,7 +67,7 @@
       }
     </style>
   </head>
-  <body>
+  <body >
         <!-- Navbar -->
         <span id="0"></span>
      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -123,11 +123,15 @@
        </div>
      </nav>
      <!--Akhir Navbar-->
-    <div class="mt-3" id="judul1">
-    <div style="text-align: center;">
-        <h1>Contact Us</h1>
-      </div>
-    <div class="container">
+    <div style=" color:white">
+    <div >
+    <div style="text-align: center;">  
+    <h1 style="background-color: #212529;margin-bottom: 0;">Contact Us</h1>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#212529" fill-opacity="1" d="M0,64L48,101.3C96,139,192,213,288,245.3C384,277,480,267,576,234.7C672,203,768,149,864,128C960,107,1056,117,1152,133.3C1248,149,1344,171,1392,181.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+  </div>             
+    </div>
+    </div>
+    <div class="container" id="judul1">
       
         <div class="column d-inline">
           <img src="src/logo.png" style="width: 100%" class="mt-2" />

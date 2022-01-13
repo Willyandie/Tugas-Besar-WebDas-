@@ -13,6 +13,47 @@
       * {
         box-sizing: border-box;
       }
+      @media only screen and (max-width: 1279px) {
+        .footer {
+          width: 100%;
+          position:fixed;
+          bottom: 0rem;
+          left: 0rem;
+          right: 0rem;
+          margin-bottom:0rem;
+        background-size: auto;
+        }
+      }
+      @media only screen and (min-width: 1280px) {
+        .footer {
+          width: 100%;
+          position:relative;
+          bottom: 0rem;
+          left: 0rem;
+          right: 0rem;
+          margin-bottom:0rem;
+        background-size: auto;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 1279px) {
+        .footer {
+          width: 100%;
+          position:fixed;
+          bottom: 0rem;
+          left: 0rem;
+          right: 0rem;
+          margin-bottom:0rem;
+        background-size: auto;
+        }
+      }
+      @media (min-width: 1280px) and (max-width: 1400px) {
+        .footer {
+          width: 100%;
+          position:relative;
+          margin-bottom:0rem;
+        background-size: auto;
+        }
+      }
 
       /* Style inputs */
       input[type='text'],
@@ -132,9 +173,8 @@
     </div>
     </div>
     <div class="container" id="judul1">
-      
-        <div class="column d-inline">
-          <img src="src/logo.png" style="width: 100%" class="mt-5" />
+        <div class="column d-inline ">
+          <img src="src/logo1.png" style="width: 100%" class="mt-5"/>
         </div>
         <div class="column d-inline text-start">
           <form method="POST">
@@ -151,8 +191,8 @@
               <option value="overseas">Overseas</option>
             </select>
             <label for="subject">Type Something...</label>
-            <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
-            <input type="button" class="btn btn-success" value="Submit" name="ok" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" ></textarea>
+            <input type="button" class="btn btn-success mt-3" value="Submit" name="ok" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
           </form>
         </div>
     </div>
@@ -180,13 +220,15 @@
   </div>
 </div>
      <!--Footer-->
-  <div class="card w-100" style="border: none;">
+
+  <div class="card w-100 footer" style="border: none;">
     <div class="card-body text-center bg-dark text-white ">
       <h5 class="card-title"><i>"Be Yourself and Never Surrender!"</i></h5>
       <h6 class="card-title"><i>JessNoLimit</i></h6>
       <p class="card-text">&copy; Gator Gadget Store 2021</p>
     </div>
   </div>
+
 <!--Akhir Footer-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
   </body>
